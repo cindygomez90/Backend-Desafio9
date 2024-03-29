@@ -13,7 +13,7 @@ const levelOptions = {
     },
     colors: {           
         fatal: 'red',
-        error: 'orange',
+        error: 'black',
         warning: 'yellow',
         info: 'green',
         http: 'blue',
@@ -63,4 +63,4 @@ const addLogger = (req, res, next) => {
 
 
 
-module.exports = { addLogger, logger }
+module.exports = { addLogger }

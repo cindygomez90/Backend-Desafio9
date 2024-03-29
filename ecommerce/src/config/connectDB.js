@@ -1,8 +1,8 @@
 const dotenv = require ('dotenv')
 const { program } = require('../utils/commander')
+const { mode } = program.opts() 
 const MongoSingleton = require("../utils/mongoSingleton")
 
-const { mode } = program.opts() 
 
 
 console.log('Modo:', mode)

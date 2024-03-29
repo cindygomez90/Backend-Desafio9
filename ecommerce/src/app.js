@@ -38,7 +38,7 @@ app.use(addLogger)
 
 app.use (router)
 
-//se pasa un middleware para el manejo de errores 
+//se pasa un middleware para el manejo de errores
 //app.use(handleErrors)
 
 //configuración socket del lado del server

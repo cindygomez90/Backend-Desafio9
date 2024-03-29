@@ -2,7 +2,7 @@
     const { generateUniqueCode } = require ('../utils/uniqueCode.js')
     const { CustomError } = require ('../utils/errors/customError.js')
     const { EErrors } = require ('../utils/errors/enums.js')
-    const { generateCartErrorInfo  } = require ('../utils/errors/info.js')
+    const { generateCartErrorInfo } = require ('../utils/errors/info.js')
 
 
     class CartController {

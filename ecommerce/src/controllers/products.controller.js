@@ -85,7 +85,7 @@ const { generateProductErrorInfo } = require ('../utils/errors/info.js')
                 //si alguno de los campos no viene se va a instanciar el error
                 if (!productNew.title || !productNew.price || !productNew.stock) {
                     CustomError.createError({
-                        name: 'Error en la creación de proucto',
+                        name: 'Error en la creación de producto',
                         cause: generateProductErrorInfo(productNew),
                         message: 'Error al intentar crear el producto',
                         code: EErrors.PRODUCT_CREATION_ERROR

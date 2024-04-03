@@ -1,4 +1,4 @@
-const { EErrors } = require("../../utils/errors/enums");
+const { EErrors } = require('../../utils/errors/enums.js')
 
 handleErrors = (error, req, res, next) => {
     console.log(error)
@@ -10,14 +10,11 @@ handleErrors = (error, req, res, next) => {
         case EErrors.PRODUCT_CREATION_ERROR: 
             return res.send({ status: 'error', error: error.name, cause: error.cause })
             break;
-        case EErrors.CART_NOT_FOUND: 
+        case EErrors.CART_NOT_FOUND_ERROR: 
             return res.send({ status: 'error', error: error.name, cause: error.cause })
             break;
-        case EErrors.PRODUCT_NOT_FOUND: 
+        case EErrors.PRODUCT_NOT_FOUND_ERROR: 
             return res.send({ status: 'error', error: error.name, cause: error.cause })
-            break;
-        case EErrors.ADD_PRODUCT_ERROR: 
-            return res.send({ status: 'error', error: error.name, cause: error.cause })      
             break;
 
         default:    

@@ -16,10 +16,13 @@ const generateProductErrorInfo = (product) => {
     `
 }
 
-const generateCartErrorInfo = (cartId, productId) => {
-    let info = `Cart ID: ${cartId}, Product ID: ${productId}`;
-    return info
+const generateCartNotFoundErrorInfo = (cartId) => {
+    return `Carrito no encontrado con ID: ${cartId}. No se puede agregar productos al carrito.`
+}
+
+const generateProductNotFoundErrorInfo = (productId) => {
+    return `Producto no encontrado con ID: ${productId}. No se puede agregar productos al carrito.`
 }
 
 
-module.exports = { generateUserErrorInfo, generateProductErrorInfo, generateCartErrorInfo }
+module.exports = { generateUserErrorInfo, generateProductErrorInfo, generateProductNotFoundErrorInfo, generateCartNotFoundErrorInfo }
